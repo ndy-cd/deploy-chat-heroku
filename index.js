@@ -9,6 +9,7 @@ var messages = [];
 // var msgobj = {[name, message]};
 
 // heroku >>
+var path = require('path')
 var port = process.env.PORT;
 if (port == null || port == "") {
   port = 8000;
