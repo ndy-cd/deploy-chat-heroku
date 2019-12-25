@@ -9,17 +9,13 @@ var messages = [];
 // var msgobj = {[name, message]};
 
 // heroku >>
-var path = require('path')
 var port = process.env.PORT;
 if (port == null || port == "") {
   port = 8000;
 }
-// app.listen(port);
 
-app.use(express.static(path.join(__dirname, 'public')))
 app.get('/', function(req, res){
     res.sendFile(__dirname + '/index_client.html');
-    // res.sendFile(__dirname + '/index_bundle.js');
 });
 
 http.listen(port, function(){             // << heroku
