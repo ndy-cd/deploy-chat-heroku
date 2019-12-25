@@ -17,7 +17,7 @@ if (port == null || port == "") {
 
 
 app.get('/', function(req, res){
-    res.sendFile(__dirname + '/index.html');
+    res.sendFile(__dirname + '/index_client.html');
     // res.sendFile(__dirname + '/index_bundle.js');
 });
 
